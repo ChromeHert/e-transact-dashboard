@@ -1,30 +1,19 @@
-import React, { useState } from 'react';
-import Sidebar from './Components/Sidebar/Sidebar';
-import Header from './Components/Header/Header';
+import Sidebar from './components/sidebar/Sidebar';
+import Main from './components/main/Main';
+
 
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
   return (
-    <>
-    <div className={`${darkMode && "dark"}`}>
-    <Header toggleDarkMode={toggleDarkMode}
-      darkMode={darkMode}
-      toggleSidebar={toggleSidebar}/>
-
-      <Sidebar isSidebarOpen={isSidebarOpen}/>
-     </div> 
-    </>
+    <div className='flex h-screen bg-white dark:bg-slate-900'>
+      <section className='w-[10%] sm:w-[15%]'>
+      <Sidebar />
+      </section>
+      <section className='flex flex-col w-[90%] sm:w-[85%] overflow-auto'>
+      <Main />
+      </section>
+    </div>
   );
-};
+}
 
 export default App;
