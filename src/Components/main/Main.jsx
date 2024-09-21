@@ -1,11 +1,230 @@
-import React from 'react'
+import { LuWallet } from "react-icons/lu";
+import { CiMenuKebab } from "react-icons/ci";
+import { IoPieChartOutline } from "react-icons/io5";
+import { LiaPeopleCarrySolid } from "react-icons/lia";
+import { BsPersonVcard } from "react-icons/bs";
+import { IoCalendarOutline } from "react-icons/io5";
+import profile from '../../assets/user1.png';
+import { IoNotificationsOutline } from "react-icons/io5";
+import { MdMarkEmailUnread } from "react-icons/md";
+import { CiTimer } from "react-icons/ci";
+
+
 
 const Main = () => {
   return (
-    <d>
-    <h1 className='text-4xl font-bold'>Main page</h1>
-    </d>
-  )
+    <div className='flex flex-col md:flex-row bg-indigo-100 dark:bg-slate-950'>
+      <section className='w-auto md:w-[70%] h-full'>
+      <div className='w-full flex items-cente justify-between'>
+        <div className='text-indigo-950 m-4 font-bold text-xl md:text-2xl dark:text-transparent bg-clip-text dark:bg-gradient-to-l from-indigo-800 to-pink-800 '>Hello, Welcome to your Dashboard</div>
+        <div className='flex md:hidden gap-4 items-center justify-end px-4 text-indigo-950 dark:text-slate-800'>
+          <IoCalendarOutline/>
+          <IoNotificationsOutline/>
+          <MdMarkEmailUnread/>
+          <img src={profile} className='rounded-full w-8 h-8'/>
+      </div>
+      </div>
+        <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4  gap-4 m-4'>
+          <div className='flex flex-col justify-between w-full md:w-auto h-48  bg-white dark:bg-slate-900/50 p-4 rounded-md '>
+            <div className='flex w-full items-center justify-between'>
+              <div><LuWallet className='text-4xl text-indigo-950 dark:text-slate-400'/></div>
+              <div className='flex items-center justify-center w-10 h-10 dark:text-slate-400 bg-indigo-200 dark:bg-slate-900/50 rounded-full'><CiMenuKebab/></div>
+            </div>
+            <div className='font-extrabold text-4xl sm:text-2xl md:text-lg lg:text-xl text-indigo-950  dark:text-slate-400'>&#8358;5,240.00</div>
+            <div>
+              <div className='text-indigo-950 dark:text-slate-400 text-sm font-semibold'>Wallet Balance</div>
+            </div>
+          </div>
+          <div className='flex flex-col justify-between w-full md:w-auto h-48 bg-white dark:bg-slate-900/50 p-4 rounded-md '>
+            <div className='flex w-full items-center justify-between'>
+              <div><IoPieChartOutline className='text-4xl text-indigo-950 dark:text-slate-400'/></div>
+              <div className='flex items-center justify-center w-10 h-10 dark:text-slate-400 bg-indigo-200 dark:bg-slate-900/50 rounded-full'><CiMenuKebab/></div>
+            </div>
+            <div className='font-extrabold text-4xl sm:text-2xl md:text-lg lg:text-xl text-indigo-950 dark:text-slate-400'>&#8358;124.00</div>
+            <div>
+              <div className='text-indigo-950 dark:text-slate-400 text-sm font-semibold'>Cash Back</div>
+            </div>
+          </div>
+          <div className='flex flex-col justify-between w-full md:w-auto h-48 bg-white dark:bg-slate-900/50 p-4 rounded-md '>
+            <div className='flex w-full items-center justify-between'>
+              <div><LiaPeopleCarrySolid className='text-4xl text-indigo-950 dark:text-slate-400' /></div>
+              <div className='flex items-center justify-center dark:text-slate-400 w-10 h-10 bg-indigo-200 dark:bg-slate-900 rounded-full'><CiMenuKebab/></div>
+            </div>
+            <div className='font-extrabold text-4xl sm:text-2xl md:text-lg lg:text-xl text-indigo-950 dark:text-slate-400'>https//:</div>
+            <div>
+              <div className='text-indigo-950 dark:text-slate-400 text-sm font-semibold'>Referral Link</div>
+            </div>
+          </div>
+          <div className='flex flex-col justify-between w-full md:w-auto h-48 bg-white dark:bg-slate-900/50 p-4 rounded-md '>
+            <div className='flex w-full items-center justify-between'>
+              <div><BsPersonVcard className='text-4xl text-indigo-950 dark:text-slate-400'/></div>
+              <div className='flex items-center justify-center dark:text-slate-400 w-10 h-10 bg-indigo-200 dark:bg-slate-900/50 rounded-full'><CiMenuKebab/></div>
+            </div>
+            <div className='font-extrabold text-4xl sm:text-2xl md:text-lg lg:text-xl text-indigo-950 dark:text-slate-400'>&#8358;13,270.00</div>
+            <div>
+              <div className='text-indigo-950 dark:text-slate-400 text-sm font-semibold'>Weekly Transactions</div>
+            </div>
+          </div>
+         
+        </div>
+        <div className='grid md:grid-cols-4  gap-4 m-4 w-auto'>
+          <div className='col-span-4 md:col-span-1  h-28 bg-white dark:bg-slate-900/50 rounded-md'>
+            <div className='flex flex-col  justify-between p-4 h-full'>
+              <div className='font-semibold text-indigo-950 dark:text-slate-400'>New Clients</div>
+              <div className='flex items-center justify-between w-full'>
+                <div className='text-5xl sm:text-xl md:text-xl lg:text-5xl font-bold text-indigo-950 dark:text-slate-400'>6</div>
+                <div className='flex px-2 py-1 text-xs rounded-full bg-green-500 items-center justify-center text-green-900'>+69%</div>
+              </div>
+            </div>
+          </div>
+          <div className='col-span-4 md:col-span-3 row-span-2 bg-white dark:bg-slate-900/50'>
+            {/* <Chart /> */}
+          </div>
+          <div className='col-span-4 md:col-span-1  h-28 bg-white dark:bg-slate-900 rounded-md'>
+            <div className='flex flex-col  justify-between p-4 h-full'>
+              <div className='font-semibold text-indigo-950 dark:text-slate-400'>Invoice Overdue</div>
+              <div className='flex items-center justify-between w-full'>
+                <div className='text-5xl font-bold text-indigo-950 dark:text-slate-400'>8</div>
+                <div className='flex px-2 py-1 text-xs rounded-full bg-red-500 items-center justify-center text-red-900 dark:text-slate-400'>19%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='m-4'>
+          <div className='text-indigo-950 dark:text-slate-400 font-bold text-2xl my-4'>Recent Transactions</div>
+          <table className="w-full text-sm text-left  dark:text-indigo-500">
+          <thead className="text-xs text-indigo-950 dark:text-slate-400 uppercase bg-gray-50 00 dark:bg-slate-900/50">
+          <tr>
+              <th scope="col" className="py-3 px-6">Account Name</th>
+              <th scope="col" className="py-3 px-6">Bank Account</th>
+              <th scope="col" className="py-3 px-6">Amount</th>
+              <th scope="col" className="py-3 px-6">Status</th>
+          </tr>
+          </thead>
+          <tbody className='text-indigo-950 dark:text-slate-400'>
+          <tr className="bg-white dark:bg-slate-900/50 border-b">
+              <td className="py-4 px-6">Ade</td>
+              <td className="py-4 px-6">WEMA - 0068</td>
+              <td className="py-4 px-6">&#8358;4,500.00</td>
+              <td className="py-4 px-6">
+              <button className="border-dashed border-2 border-green-500 bg-green-200 text-green-500 font-base py-2 px-2 rounded-2xl">
+                Success
+              </button>
+              </td>
+
+          </tr>
+          
+          <tr className="bg-white dark:bg-slate-900/50 border-b  ">
+              <td className="py-4 px-6">Jamal</td>
+              <td className="py-4 px-6">Fst Monie - 3043</td>
+              <td className="py-4 px-6">&#8358;7,820.00</td>
+              <td className="py-4 px-6"><button className="border-dashed border-2 border-green-500 bg-green-200 text-green-500 font-base py-2 px-2 rounded-2xl">
+                Success
+              </button></td>
+
+          </tr>
+          <tr className="bg-white dark:bg-slate-900/50 border-b  ">
+              <td className="py-4 px-6">Mrs Patricia</td>
+              <td className="py-4 px-6">Access - 2756</td>
+              <td className="py-4 px-6">&#8358;12,300.00</td>
+              <td className="py-4 px-6"><button className="border-dashed border-2 border-amber-500 bg-amber-200 text-amber-500 font-base py-2 px-2 rounded-2xl">
+                Pending
+              </button></td>
+
+          </tr>
+          <tr className="bg-white dark:bg-slate-900/50">
+              <td className="py-4 px-6">David</td>
+              <td className="py-4 px-6">Opay - 8142</td>
+              <td className="py-4 px-6">&#8358;8,000.00</td>
+              <td className="py-4 px-6"><button className="border-dashed border-2 border-red-500 bg-red-200 text-red-500 font-base py-2 px-2 rounded-2xl">
+                Failed
+              </button></td>
+
+          </tr>
+          </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className='w-full md:w-[30%] bg-indigo-200 dark:bg-slate-900/20 h-full'>
+        <div className='flex flex-col m-4 '>
+          <div className='hidden md:flex gap-4 items-center justify-end px-4 text-indigo-950 dark:text-slate-800'>
+            <IoCalendarOutline/>
+            <IoNotificationsOutline/>
+            <MdMarkEmailUnread/>
+            <img src={profile} className='rounded-full w-8 h-8'/>
+          </div>
+          <div className='flex flex-col bg-white dark:bg-slate-900/50 gap-6 p-4 m-4 rounded-md h-auto  shadow-lg'>
+            <div className=''>
+              <div className='font-bold text-indigo-950 dark:text-slate-400'>Formation status</div>
+              <div className='text-xs font-bold text-indigo-500 dark:text-slate-400'>In progress</div>
+            </div>
+            <div class="h-4 w-full  dark:bg-gray-200 rounded-lg">
+              <div class="h-4 bg-indigo-900 dark:text-slate-400 w-[30%] rounded-lg"></div>
+            </div>
+            <div className='flex flex-col items-center'>
+                <div className='font-bold text-indigo-950 dark:text-slate-400'>Estimated Processing</div>
+                <div className='font-semibold text-indigo-900 dark:text-slate-400 text-sm'>4-5 business days</div>
+            </div>
+            <div>
+              <button className='bg-gradient-to-tr from-pink-900 to-indigo-900 dark:text-slate-400 p-4 text-white w-full rounded-xl'>View Status</button>
+            </div>
+          </div>
+          <div className='flex flex-col gap-5 m-4 text-indigo-900 dark:text-slate-400  '>
+            <div className='flex gap-4 items-center bg-white dark:bg-slate-900/50 p-2 rounded-md w-full'>
+              <div className='flex items-center justify-center rounded-full w-8 h-8 bg-indigo-300 dark:bg-slate-950'>
+              <CiTimer/>
+              </div>
+              <div className=''>
+                <div className='font-semibold text-sm'>Run payroll</div>
+                <div className='text-indigo-500 text-xs'>March 7th at 4:50Pm</div>
+              </div>
+            </div>
+            <div className='flex gap-4 items-center bg-white dark:bg-slate-900/50 p-2 rounded-md w-full'>
+              <div className='flex items-center justify-center rounded-full w-8 h-8 bg-indigo-300 dark:bg-slate-950'>
+              <CiTimer/>
+              </div>
+              <div>
+                <div className='font-semibold text-sm'>Run payroll</div>
+                <div className='text-indigo-500 text-xs'>March 7th at 4:50Pm</div>
+              </div>
+            </div>
+            <div className='flex gap-4 items-center bg-white dark:bg-slate-900/50 p-2 rounded-md w-full'>
+              <div className='flex items-center justify-center rounded-full w-8 h-8 bg-indigo-300 dark:bg-slate-950'>
+              <CiTimer/>
+              </div>
+              <div>
+                <div className='font-semibold  text-sm'>Run payroll</div>
+                <div className='text-indigo-500 text-xs'>March 7th at 4:50Pm</div>
+              </div>
+            </div>
+            <div className='flex gap-4 items-center bg-white dark:bg-slate-900/50 p-2 rounded-md w-full'>
+              <div className='flex items-center justify-center rounded-full w-8 h-8 bg-indigo-300 dark:bg-slate-950'>
+              <CiTimer/>
+              </div>
+              <div>
+                <div className='font-semibold  text-sm'>Run payroll</div>
+                <div className='text-indigo-500 text-xs'>March 7th at 4:50Pm</div>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col bg-white dark:bg-slate-900/50 gap-6 p-4 m-4 rounded-lg h-auto  shadow-lg'>
+            <div>
+              <div className='font-bold text-indigo-950 dark:text-slate-400'>Board Meeting</div>
+              <div className='text-xs font-bold text-indigo-500'>March 5th 2024</div>
+            </div>
+            <div className='flex flex-col items-center'>
+                <div className='font-semibold text-indigo-900 dark:text-slate-400 text-sm'>
+                You have been invited to attend a meeting of board of directors
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+    
+  );
 }
 
-export default Main
+export default Main;

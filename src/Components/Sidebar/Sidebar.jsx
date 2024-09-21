@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AiFillDashboard } from "react-icons/ai";
 import { IoIosCard } from "react-icons/io";
-import { MdOutlinePayments } from "react-icons/md";
+import { MdLogout, MdOutlinePayments } from "react-icons/md";
 import { MdOutlineAccountBalance } from "react-icons/md";
 import { HiBanknotes } from "react-icons/hi2";
 import { FaPeopleArrows } from "react-icons/fa6";
@@ -18,7 +18,7 @@ const Sidebar = () => {
         <div className='flex flex-col gap-10 px-4 mt-4'>
           <div className='flex items-center justify-center gap-2'>
             <GiTrade className='text-indigo-900 dark:text-white text-xl md:text-4xl'/>
-            <div className=' hidden md:flex font-bold text-xl'>G-tranzact</div>
+            <div className='hidden md:flex font-bold text-xl'>G-tranzact</div>
           </div>
           <div className='flex flex-col gap-5 text-md sm:text-xs md:text-sm lg:text-lg'>
             <div className='flex items-center  gap-2'>
@@ -43,14 +43,17 @@ const Sidebar = () => {
             </div>
             <div className='flex items-center  gap-2 hover:text-slate-100 cursor-pointer'>
               <div><FaPeopleArrows/></div>
-              <div className='hidden sm:flex'>Beneficiary</div>
+              <div className='hidden sm:flex'>Beneficiaries</div>
+            </div>
+            <div className='flex items-center  gap-2 hover:text-slate-100 cursor-pointer'>
+              <div><IoSettingsOutline/></div>
+              <div className='hidden sm:flex'>Settings</div>
             </div>
           </div>
         </div>
         <div className='flex items-center text-md sm:text-xs md:text-sm lg:text-lg px-4 mb-4 gap-2 hover:text-slate-100 cursor-pointer'>
-          <div><IoSettingsOutline/></div>
-          <div className='hidden sm:flex'>Settings</div>
-          
+          <div><MdLogout /></div>
+          <div className='hidden sm:flex'>Logout</div> 
         </div>
       </div>
     </div>
