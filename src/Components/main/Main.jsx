@@ -8,6 +8,7 @@ import profile from '../../assets/user1.png';
 import { IoNotificationsOutline } from "react-icons/io5";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { CiTimer } from "react-icons/ci";
+import Chart from "../chart/Chart";
 
 
 
@@ -77,8 +78,8 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div className='col-span-4 md:col-span-3 row-span-2 bg-white dark:bg-slate-900/50'>
-            {/* <Chart /> */}
+          <div className='col-span-4 md:col-span-3 row-span-2 bg-white dark:bg-slate-900/50 rounded-md'>
+            <Chart />
           </div>
           <div className='col-span-4 md:col-span-1  h-28 bg-white dark:bg-slate-900 rounded-md'>
             <div className='flex flex-col  justify-between p-4 h-full'>
@@ -149,9 +150,9 @@ const Main = () => {
       <section className='w-full md:w-[30%] bg-indigo-200 dark:bg-slate-900/20 h-full'>
         <div className='flex flex-col m-4 '>
           <div className='hidden md:flex gap-4 items-center justify-end px-4 text-indigo-950 dark:text-slate-800'>
-            <IoCalendarOutline/>
-            <IoNotificationsOutline/>
-            <MdMarkEmailUnread/>
+            <IoCalendarOutline className="w-6 h-6"/>
+            <IoNotificationsOutline className="w-6 h-6"/>
+            <MdMarkEmailUnread className="w-6 h-6"/>
             <img src={profile} className='rounded-full w-8 h-8'/>
           </div>
           <div className='flex flex-col bg-white dark:bg-slate-900/50 gap-6 p-4 m-4 rounded-md h-auto  shadow-lg'>
@@ -211,7 +212,7 @@ const Main = () => {
           <div className='flex flex-col bg-white dark:bg-slate-900/50 gap-6 p-4 m-4 rounded-lg h-auto  shadow-lg'>
             <div>
               <div className='font-bold text-indigo-950 dark:text-slate-400'>Board Meeting</div>
-              <div className='text-xs font-bold text-indigo-500'>March 5th 2024</div>
+              <div className='text-xs font-bold text-indigo-500'>August 5th 2024</div>
             </div>
             <div className='flex flex-col items-center'>
                 <div className='font-semibold text-indigo-900 dark:text-slate-400 text-sm'>
