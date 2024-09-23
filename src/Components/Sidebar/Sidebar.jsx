@@ -13,8 +13,8 @@ import { GiTrade } from 'react-icons/gi';
 
 const Sidebar = () => {
   return (
-    <div className=' h-screen bg-indigo-600 dark:bg-slate-950/50  shadow-lg '>
-      <div className=' flex flex-col gap-3 w-full text-slate-300 h-full justify-between'>
+    <div className='h-screen bg-indigo-500 dark:bg-slate-950/50  shadow-lg'>
+      <div className='flex flex-col gap-3 w-full text-slate-300 h-full justify-between'>
         <div className='flex flex-col gap-10 px-4 mt-4'>
           <div className='flex items-center justify-center gap-2'>
             <GiTrade className='text-indigo-900 dark:text-white text-xl md:text-4xl'/>
@@ -23,7 +23,7 @@ const Sidebar = () => {
           <div className='flex flex-col gap-5 text-md sm:text-xs md:text-sm lg:text-lg'>
             <div className='flex items-center  gap-2'>
               <div><AiFillDashboard/></div>
-              <div className='hidden sm:flex hover:text-slate-100 cursor-pointer '>Dashboard</div>
+              <div className='hidden sm:flex hover:text-slate-100 cursor-pointer'>Dashboard</div> 
             </div>
             <div className='flex items-center  gap-2 hover:text-slate-100 cursor-pointer'>
               <div><IoIosCard/></div>
